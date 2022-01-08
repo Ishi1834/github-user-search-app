@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>devfinder</h1>
+      <div class="theme">
+        <div class="themeNames">
+          <div>Dark</div>
+          <div hidden>Light</div>
+        </div>
+        <div class="themeIcons">
+          <img src="./assets/icon-moon.svg" alt="Moon icon" />
+          <img src="./assets/icon-sun.svg" hidden alt="Sun icon" />
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <img src="./assets/icon-search.svg" alt=" Search icon" />
+      <textarea
+        name="githubSearch"
+        id="githubSearch"
+        placeholder="Search GitHub username..."
+        cols="30"
+        rows="10"
+      ></textarea>
+      <button id="search">Search</button>
+    </div>
+    <div class="profile">
+      <div class="user">
+        <img src="./assets/favicon-32x32.png" alt="Image of user" />
+        <div class="details">
+          <h1 id="name">The octocat</h1>
+          <h3 id="userName">@octocat</h3>
+          <p id="joinedDate">Joined 25 Jan 2011</p>
+        </div>
+      </div>
+      <p class="bio"></p>
+      <div class="myData">
+        <div class="data">
+          <h4>Repos</h4>
+          <div id="repos">8</div>
+        </div>
+        <div class="data">
+          <h4>Followers</h4>
+          <div id="followers">3938</div>
+        </div>
+        <div class="data">
+          <h4>Following</h4>
+          <div id="following">9</div>
+        </div>
+      </div>
+      <div class="aboutMe">
+        <div div class="contact">
+          <img src="./assets/icon-location.svg" alt="location icon" />
+          <div id="location">San Francisco</div>
+        </div>
+        <div div class="contact">
+          <img src="./assets/icon-website.svg" alt="Website icon" />
+          <div id="website">htts://github.blog</div>
+        </div>
+        <div div class="contact">
+          <img src="./assets/icon-twitter.svg" alt="twitter icon" />
+          <div id="twitter">Not Available</div>
+        </div>
+        <div div class="contact">
+          <img src="./assets/icon-company.svg" alt="work Icon" />
+          <div id="work">agithub</div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

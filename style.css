@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+:root {
+  /* light mode colors */
+  --blue: #0079ff;
+  --dark-grey: #2b3442;
+  --light-grey: #697c9a;
+  --blue-grey: #4b6a9b;
+  --dark-white: #f6f8ff;
+  --white: #fefefe;
+
+  /* dark mode colors */
+  --darkmode-blue: #0079ff;
+  --darkmode-white: #ffffff;
+  --darkmode-black: #141d2f;
+  --darkmode-blue-grey: #1e2a47;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(246, 248, 255, 1);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #2b3442;
+}
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+  color: #2b3442;
+}
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+  color: #2b3442;
+}
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  color: #0079ff;
+}
+h4 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+
+  color: #4b6a9b;
+}
+
+.title {
+  display: flex;
+  margin: 31px 24px;
+  width: 327px;
+  justify-content: space-between; /*this creates space horizontally*/
+  align-items: center;
+}
+
+.theme {
+  display: flex;
+}
+.themeNames {
+  margin-right: 16px;
+}
