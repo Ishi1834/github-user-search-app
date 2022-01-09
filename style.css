@@ -59,24 +59,36 @@ h4 {
   line-height: 19px;
   color: #4b6a9b;
 }
-
+/* Made the three main elements resizable by having a
+width which is set to vw
+a max and min width which are in px
+*/
 .title {
   display: flex;
   margin: 31px 24px;
-  width: 327px;
+  width: 87.2vw;
+  max-width: 330px;
+  min-width: 300px;
   justify-content: space-between; /*this creates space horizontally*/
   align-items: center;
 }
-
 .theme {
   display: flex;
 }
 .themeNames {
   margin-right: 16px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: right;
+  letter-spacing: 2.5px;
+  color: var(--blue-grey);
 }
 /* middle section */
 .search {
-  width: 327px;
+  width: 87.2vw;
+  max-width: 330px;
+  min-width: 300px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -89,28 +101,59 @@ h4 {
 .search img {
   width: 20.05px;
   height: auto;
+  margin: 20px 8.95px 20px 16px;
 }
 .search textarea {
-  width: 184px;
+  width: 100%;
+  max-width: 184px;
   height: 25px;
   border: none;
-  margin-right: 7px;
-  margin-left: 8.95px;
+  margin: 17px 0;
   font-weight: normal;
   font-size: 13px;
   line-height: 25px;
+  resize: none;
+}
+.search textarea:active {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222731;
+}
+.search textarea:focus {
+  outline: none;
+}
+#noResult {
+  /* To be used when search returns no results */
+  width: 100%;
+  height: 22px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #f74646;
+  white-space: nowrap;
+  display: none;
 }
 .search button {
+  min-width: 84px;
   width: 84px;
   height: 46px;
   border: none;
   background-color: var(--blue);
   color: var(--white);
   border-radius: 10px;
+  margin: 6.5px 7px 7.5px 7px;
+}
+.search button:hover {
+  cursor: pointer;
+  background-color: #60abff;
 }
 /* bottom section */
 .profile {
-  width: 327px;
+  width: 87.2vw;
+  max-width: 330px;
+  min-width: 300px;
   height: 517px;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 15px;
